@@ -4,7 +4,7 @@ FROM ubuntu:14.04
 # Install Nginx
 RUN \
     apt-get update && \
-    apt-get install -y nginx php5-fpm php5-mysql mysql-server cron python python-imaging python-mysqldb python-rsa && \
+    apt-get install -y nginx php5-fpm php5-mysql mysql-server cron python python-imaging python-mysqldb python-rsa jpegoptim && \
     rm -rf /var/lib/apt/lists/*
 
 COPY files/nginx.conf /etc/nginx/nginx.conf
